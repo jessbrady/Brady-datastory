@@ -1,0 +1,33 @@
+html {
+font-size: 56px;
+}
+/* BASIC STYLES FOR PROTOTYPING */
+section#personal div,
+section#social div,
+section#resources div {
+  min-height: 250px;
+  margin-bottom: 15px;
+}
+section#personal div {
+  background: #573544;
+  color: white;
+  font-size: 32px;
+}
+section#social div {
+  background: #8CBEB2;
+  color: white;
+  font-size: 32px;
+}
+section#resources div {
+  background: #F2EBBF;
+  font-size: 32px;
+}
+
+/* GRID/LAYOUT STYLES */
+section#personal,
+section#social,
+section#resources {
+  display: grid;
+  grip-gap: 15 px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
