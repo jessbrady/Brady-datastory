@@ -65,7 +65,10 @@ header, #content, #middle, #sidebar {
 img {
     width: 20%;
     height: auto;
-    float: left;
     display: block;
+    float: left;
+    margin-left: 10px;
+    
+    
 }
 
