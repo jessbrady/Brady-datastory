@@ -54,6 +54,11 @@ header {
 body {
   background-color: lightblue;
 }
-section  {
-  background-color: purple;
+header, #content, #middle, #sidebar {
+	margin-bottom: 5px;
+}
+
+#pagewrap, header, #content, #middle, #sidebar, footer {
+	border: solid 1px #ccc;
+  border-color: black;
 }
