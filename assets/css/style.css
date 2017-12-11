@@ -62,3 +62,10 @@ header, #content, #middle, #sidebar {
 	border: solid 1px #ccc;
   border-color: black;
 }
+img {
+    width: 20%;
+    height: auto;
+    float: left;
+    display: block;
+}
+
