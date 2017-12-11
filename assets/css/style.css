@@ -1,6 +1,4 @@
-html {
-font-size: 56px;
-}
+
 /* BASIC STYLES FOR PROTOTYPING */
 section#personal div,
 section#social div,
@@ -30,4 +28,10 @@ section#resources {
   display: grid;
   grip-gap: 15 px;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.content-box {
+  margin: 0;
+  height: 90px;
+  border: 3px solid black;
+  columns: 3;
 }
