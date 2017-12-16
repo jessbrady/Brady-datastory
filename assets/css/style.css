@@ -24,6 +24,9 @@ body {
 h1,h2,h3,h4 {
   font-family: 'Alegreya', serif;
   text-align: center;
+  padding-top: 0px;
+  margin-top: 0px;
+  position: relative;
 }
 
 /* ===================
@@ -32,6 +35,7 @@ h1,h2,h3,h4 {
 img[src="assets/img/me.jpg"] {
   width: 15%;
   margin-top: 10px
+  position: absolute;
 }
 img[src="assets/img/jessica-brady2(1).png"] {
   width: 100%;
@@ -53,7 +57,7 @@ div.video-container iframe {
   position: absolute;
   top: 0; left: 0;
   /* Modify this code below */
-  margin-left: 15px;
+  margin-left: 0px;
   width: 80%;
   height: 80%;
 }
@@ -61,21 +65,24 @@ div.video-container iframe {
 /* ===================
    Grid styles
    =================== */
+section#welcome,
 section#personal,
-section#social,
-header, footer {
+section#social {
  display: grid;
  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 /* Media query for #personal & #social */
 @media screen and (min-width:1080px) {
+  section#welcome {
+    grid-template-columns: 40% 1fr;
+  }
   section#personal {
     grid-template-columns: 40% 1fr;
   }
   section#social {
-    grid-template-columns: 1fr 40%;
+    grid-template-columns: 40% 1fr;
   }
-}
+
 /*
   Query for social grid track.
   Used element inspector to find
@@ -86,34 +93,46 @@ header, footer {
 */
 @media screen and (max-width: 670px) {
   /* Change order of child divs @ breakpoint */
+  section#welcome div.content-wrapper{
+    grid-row: 3;
+    grid-column: 1;
+  }
+  section#welcome div.media-wrapper{
+    grid-row: 1;
+    grid-column: 1;
+  }
+@media screen and (max-width: 670px) {
+  /* Change order of child divs @ breakpoint */
+  section#personal div.content-wrapper{
+    grid-row: 3;
+    grid-column: 1;
+  }
+  section#personal div.media-wrapper{
+    grid-row: 1;
+    grid-column: 1;
+  }
+@media screen and (max-width: 670px) {
+  /* Change order of child divs @ breakpoint */
   section#social div.content-wrapper{
-    grid-row: 2;
+    grid-row: 3;
     grid-column: 1;
   }
   section#social div.media-wrapper{
     grid-row: 1;
     grid-column: 1;
   }
-}
+
+
 
 /* ===================
    Section styles
    =================== */
+section#welcome div,
 section#personal div,
-section#social div,
-section#resources div {
+section#social div {
   min-height: 350px;
-  padding-bottom: 50px;
+  padding-bottom: 0px;
   padding-top: 0px;
-}
-section#personal div.content-wrapper {
-  margin-left: 15px;
-}
-section#social div.content-wrapper {
-  margin-right: 15px;
-}
-div.media-wrapper {
-  align-self: center; /*center media in div*/
 }
 
 /* ===================
@@ -127,20 +146,9 @@ header {
   header div:nth-child(even) {
     display: none;
   }
-  header div:first-child {
-    /* Note the 2 dots in the url();
-        this tells the computer to
-        go back 1 folder first, then
-        proceed to the resource.
-        This is necessary, since this
-        style.css file is in the
-        assets/css folder. */
-    background: url("../img/dataviz-600.png") bottom center no-repeat;
-  }
-  header h1 {
-    margin: 0px;
-  }
-}
+ 
+  
+
 
 
 
