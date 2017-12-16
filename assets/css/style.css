@@ -10,25 +10,24 @@ html {
   /* Example gradient background */
   background: radial-gradient(circle at top left, #F0F8FF, #ebc7eb);
 }
-p {
-  margin: 0px;
-}
 
 /* ===================
    Typography scheme
    =================== */
 body {
   font-size: 20px;
-  font-family: "Lato-Light";
+  font-family: 'Titillium Web', sans-serif;
 }
 h1,h2,h3,h4 {
-  font-family: 'Alegreya', serif;
+  font-family: 'Titillium Web', sans-serif;
   text-align: center;
   padding-top: 0px;
   margin-top: 0px;
   position: relative;
 }
-
+section#welcome div.content-wrapper {
+  text-align: center;
+  }
 /* ===================
    General media styles
    =================== */
@@ -83,16 +82,7 @@ section#social {
     grid-template-columns: 40% 1fr;
   }
 
-/*
-  Query for social grid track.
-  Used element inspector to find
-  the 670px breaking point.
-  Query asks: If user is on a _screen_
-    and the screen is _less than 670px_,
-    then use the styles within.
-*/
 @media screen and (max-width: 670px) {
-  /* Change order of child divs @ breakpoint */
   section#welcome div.content-wrapper{
     grid-row: 3;
     grid-column: 1;
@@ -102,7 +92,6 @@ section#social {
     grid-column: 1;
   }
 @media screen and (max-width: 670px) {
-  /* Change order of child divs @ breakpoint */
   section#personal div.content-wrapper{
     grid-row: 3;
     grid-column: 1;
@@ -112,7 +101,6 @@ section#social {
     grid-column: 1;
   }
 @media screen and (max-width: 670px) {
-  /* Change order of child divs @ breakpoint */
   section#social div.content-wrapper{
     grid-row: 3;
     grid-column: 1;
@@ -121,6 +109,7 @@ section#social {
     grid-row: 1;
     grid-column: 1;
   }
+
 
 
 
