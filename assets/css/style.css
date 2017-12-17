@@ -74,7 +74,7 @@ div.video-container {
       at the very top and very left
       of this container div. */
   position: relative;
-  width: 1000%;
+  width: 100%;
 }
 div.video-container iframe {
   position: absolute;
