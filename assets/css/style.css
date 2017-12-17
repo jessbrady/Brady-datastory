@@ -1,46 +1,70 @@
-/* ===================
-   Import fonts
-   =================== */
-
-
-/* ===================
-   General styles
-   =================== */
-html {
-  /* Example gradient background */
-  background: radial-gradient(circle at top left, #F0F8FF, #ebc7eb);
-}
-
-/* ===================
-   Typography scheme
-   =================== */
 body {
-  font-size: 20px;
-  font-family: 'Titillium Web', sans-serif;
-}
-h1,h2,h3,h4 {
-  font-family: 'Titillium Web', sans-serif;
   text-align: center;
-  padding-top: 0px;
-  margin-top: 0px;
-  position: relative;
-}
-section#welcome div.content-wrapper {
-  text-align: center;
-  }
-/* ===================
-   General media styles
-   =================== */
-img[src="assets/img/me.jpg"] {
-  width: 15%;
-  margin-top: 10px
-  position: absolute;
-}
-img[src="assets/img/jessica-brady2(1).png"] {
-  width: 100%;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
-/* Fix iframe height issue */
+p {
+  font-size: 1.5rem;
+}
+
+h2 {
+text-align: center;
+}
+
+/*STYLE*/
+img[src="assets/img/me.jpg"] {
+  width: 95%;
+  }
+img[src="assets/img/jessica-brady2(1).png"] {
+  width: 60%;
+  }
+  
+.container {
+  display: grid;
+  grid-template-columns: 0.25fr 15px 0.75fr;
+  grid-template-rows: auto 25px auto 25px auto 25px auto;
+}
+
+.grid {
+  background-color: #444;
+  color: #fff;
+  padding: 25px;
+  font-size: 3rem;
+}
+.header {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background: #55d4eb;
+}
+
+.sidebar {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 10;
+  background: #a0c263;
+}
+
+.content {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background: #f5c531;
+  height: 500px;
+}
+
+.extra {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 10;
+  background: #898989;
+  height: 500px;
+}
+
 div.video-container {
   /* This sets up the iframe code.
       Note the absolute position
@@ -50,91 +74,22 @@ div.video-container {
       at the very top and very left
       of this container div. */
   position: relative;
-  width: 100%;
+  width: 1000%;
 }
 div.video-container iframe {
   position: absolute;
-  top: 0; left: 0;
+  top: 50; left: 0;
   /* Modify this code below */
-  margin-left: 0px;
-  width: 80%;
-  height: 80%;
-}
-
-/* ===================
-   Grid styles
-   =================== */
-section#welcome,
-section#personal,
-section#social {
- display: grid;
- grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-}
-/* Media query for #personal & #social */
-@media screen and (min-width:1080px) {
-  section#welcome {
-    grid-template-columns: 40% 1fr;
-  }
-  section#personal {
-    grid-template-columns: 40% 1fr;
-  }
-  section#social {
-    grid-template-columns: 40% 1fr;
-  }
-
-@media screen and (max-width: 670px) {
-  section#welcome div.content-wrapper{
-    grid-row: 3;
-    grid-column: 1;
-  }
-  section#welcome div.media-wrapper{
-    grid-row: 1;
-    grid-column: 1;
-  }
-@media screen and (max-width: 670px) {
-  section#personal div.content-wrapper{
-    grid-row: 3;
-    grid-column: 1;
-  }
-  section#personal div.media-wrapper{
-    grid-row: 1;
-    grid-column: 1;
-  }
-@media screen and (max-width: 670px) {
-  section#social div.content-wrapper{
-    grid-row: 3;
-    grid-column: 1;
-  }
-  section#social div.media-wrapper{
-    grid-row: 1;
-    grid-column: 1;
+  margin-left: 100px;
+  margin-top: 100px;
+  width: 100%;
+  height: 100%;
+  display: block;
   }
 
 
 
 
-/* ===================
-   Section styles
-   =================== */
-section#welcome div,
-section#personal div,
-section#social div {
-  min-height: 350px;
-  padding-bottom: 0px;
-  padding-top: 0px;
-}
-
-/* ===================
-   Header styles
-   =================== */
-header {
-  height: 0px;
-  text-align: center;
-}
-@media screen and (max-width:670px) {
-  header div:nth-child(even) {
-    display: none;
-  }
  
   
 
