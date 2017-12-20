@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-family: 'Slabo 27px', serif;
 }
 
 p {
@@ -26,7 +26,7 @@ img[src="assets/img/jessica-brady2(1).png"] {
 }
 
 .grid {
-  background-color: #444;
+  background-color: #DCD3F4;
   color: #fff;
   padding: 25px;
   font-size: 3rem;
@@ -36,7 +36,7 @@ img[src="assets/img/jessica-brady2(1).png"] {
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
-  background: #55d4eb;
+  background: #ADAAB6;
 }
 
 .sidebar {
@@ -44,7 +44,7 @@ img[src="assets/img/jessica-brady2(1).png"] {
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 10;
-  background: #a0c263;
+  background: #ADAAB6;
 }
 
 .content {
@@ -52,7 +52,7 @@ img[src="assets/img/jessica-brady2(1).png"] {
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4;
-  background: #f5c531;
+  background: #DCD3F4;
   height: 500px;
 }
 
@@ -61,7 +61,7 @@ img[src="assets/img/jessica-brady2(1).png"] {
   grid-column-end: 4;
   grid-row-start: 5;
   grid-row-end: 10;
-  background: #898989;
+  background: #DCD3F4;
   height: 500px;
 }
 
@@ -77,15 +77,19 @@ div.video-container {
   width: 100%;
 }
 div.video-container iframe {
-  position: absolute;
-  top: 50; left: 0;
-  /* Modify this code below */
-  margin-left: 100px;
-  margin-top: 100px;
-  width: 100%;
-  height: 100%;
-  display: block;
-  }
+  position: relative;
+  top: 0; right: 0;
+  margin-left: 15px;
+  min-width: 90%;
+  min-height: 100%;
+  margin-bottom: 15px
+}
+
+section#data-video {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+ margin-right: 15px;
+}
 
 
 
