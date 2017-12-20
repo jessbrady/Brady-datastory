@@ -1,3 +1,4 @@
+/*FONTS*/
 body {
   text-align: center;
   font-family: 'Slabo 27px', serif;
@@ -24,7 +25,7 @@ img[src="assets/img/jessica-brady2(1).png"] {
   grid-template-columns: 0.25fr 15px 0.75fr;
   grid-template-rows: auto 25px auto 25px auto 25px auto;
 }
-
+/*GRID STYLE*/
 .grid {
   background-color: #DCD3F4;
   color: #fff;
@@ -64,7 +65,7 @@ img[src="assets/img/jessica-brady2(1).png"] {
   background: #DCD3F4;
   height: 500px;
 }
-
+/*VIDEO*/
 div.video-container {
   /* This sets up the iframe code.
       Note the absolute position
